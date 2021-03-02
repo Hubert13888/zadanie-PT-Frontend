@@ -1,0 +1,41 @@
+.mainLayout {
+  display: grid;
+  grid-template-rows: 75px 3fr 100px;
+  nav {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+
+    .topnav_logo {
+      grid-column: 1;
+      display: grid;
+      place-items: center;
+    }
+    .topNav_options {
+      grid-column: 2;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .topnav_actions {
+      grid-column: 3;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  main {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+  }
+  footer {
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

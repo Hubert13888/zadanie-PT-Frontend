@@ -1,6 +1,6 @@
 import { render } from "react-dom";
 
-import App from "./App";
+import Home from "./Home";
+import "/styles/indexStyle.scss";
 
-const rootElement = document.getElementById("root");
-render(<App />, rootElement);
+render(<Home />, document.getElementById("root"));
